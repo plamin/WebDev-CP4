@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Rede Social</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <img src="src/assets/icons/FxTuQwVWcAAF0gM-removebg-preview.png" alt="maior do brasil" style="width: 7%;"><h1> Jogadoras do gigante brasileiro</h1>
+    </header>
+
+    <!-- Formulário para criar um novo post -->
+    <form id="postForm">
+        <i class="fa-solid fa-pen"></i> <label for="postText"> Nome: </label><br>
+
+        <textarea id="playerName" rows="1" cols="50" placeholder="Nome da jogadora:"></textarea><br>
+        <i class="fa-solid fa-list"></i> <label for="playerPosition">Posição:</label>
+
+        <select id="playerPosition">
+            <option value="Atacante">Atacante</option>
+            <option value="Meio-campo">Meio-campista</option>
+            <option value="Defensora">Defensora</option>
+            <option value="Goleira">Goleira</option>
+        </select><br>
+
+        <i class="fa-solid fa-play"></i> <label for="playerPosition">Clube:</label><br>
+        <textarea id="playerClub" rows="1" cols="50" placeholder="Clube:"></textarea><br>
+
+        <i class="fa-solid fa-image"></i> <label for="playerImage">Insira a foto (URL):</label><br>
+        <input type="text" id="postImage" placeholder="Insira a url aqui"><br>
+
+        <button type="submit"><i class="fa-solid fa-bullhorn"></i> Postar</button>
+    </form>
+
+    <h1>Jogadoras</h1>
+    <hr>
+
+    <!-- Lista de posts -->
+    <div id="postList"></div>
+
+    <script src="src/script.js"></script>
+    <script src="https://kit.fontawesome.com/129b440489.js" crossorigin="anonymous"></script>
+</body>
+</html>
